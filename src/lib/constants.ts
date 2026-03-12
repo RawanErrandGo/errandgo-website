@@ -1,5 +1,5 @@
 import { FaFacebook } from "react-icons/fa";
-import { RiInstagramFill, RiTwitterXFill } from "react-icons/ri";
+import { RiGithubFill, RiInstagramFill, RiTwitterXFill } from "react-icons/ri";
 import { PiTiktokLogoFill } from "react-icons/pi";
 
 export interface NavLink {
@@ -20,6 +20,10 @@ export const NAV_LINKS: NavLink[] = [
 ];
 
 export const FOOTER_LINKS = [
+	{
+		href: "https://github.com/orgs/ErrandGoApp/repositories",
+		icon: RiGithubFill,
+	},
 	{
 		href: "https://www.instagram.com/errandgoapp",
 		icon: RiInstagramFill,
