@@ -1,6 +1,7 @@
 import { FaFacebook } from "react-icons/fa";
 import { RiGithubFill, RiInstagramFill, RiTwitterXFill } from "react-icons/ri";
 import { PiTiktokLogoFill } from "react-icons/pi";
+import type { IconType } from "react-icons";
 
 export interface NavLink {
   title: string;
