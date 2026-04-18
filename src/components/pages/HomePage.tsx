@@ -21,7 +21,7 @@ import QRCode from "qrcode";
 
 import StoreButtons from "../StoreButtons";
 import mobileAppImage from "/Group 28918.svg";
-import { Fragment, useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { FOOTER_LINKS } from "@/lib/constants";
 
 const brand = {
