@@ -444,7 +444,7 @@ export default function Landing() {
             onClick={() => setDownloadModalOpen(true)}
             className="inline-flex items-center gap-2 rounded-2xl bg-slate-950 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 md:hidden"
           >
-            {brand.appCta}
+            App {/* {brand.appCta} */}
             <ArrowRight className="h-4 w-4" />
           </button>
         </div>
