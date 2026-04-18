@@ -1,19 +1,18 @@
 import { Outlet } from "react-router";
-import Header from "./Header";
-import Footer from "./Footer";
+
 import ScrollToTop from "./ScrollToTop";
 
 function RootLayout() {
-	return (
-		<>
-			<ScrollToTop />
-			<Header />
+  return (
+    <>
+      <ScrollToTop />
+      {/* <Header /> */}
 
-			<Outlet />
+      <Outlet />
 
-			<Footer />
-		</>
-	);
+      {/* <Footer /> */}
+    </>
+  );
 }
 
 export default RootLayout;
