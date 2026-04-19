@@ -27,9 +27,8 @@ import { FOOTER_LINKS } from "@/lib/constants";
 const brand = {
   name: "ErrandGo",
   category: "Consumer trust and payments platform",
-  headline:
-    "Platform for trusted services, escrow-backed payments, and everyday transactions",
-  sub: "ErrandGo enables errands, deliveries, shopping, escrow-backed services, milestone payments, and peer-to-peer transactions within a structured lifecycle built for real-world execution.",
+  headline: "Payment Platform for Services and Everyday Transactions",
+  sub: "A payment layer for services and real-world transactions—enabling escrow, milestone releases, and seamless fiat and crypto settlement on Stellar",
   webCta: "Open web app",
   appCta: "Download app",
 };
@@ -146,6 +145,14 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
     <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-600">
       <Sparkles className="h-3.5 w-3.5" />
+      {children}
+    </div>
+  );
+}
+function Shieldbrow({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-600">
+      <ShieldCheck className="h-3.5 w-3.5" />
       {children}
     </div>
   );
@@ -416,10 +423,12 @@ export default function Landing() {
               How it works
             </a>
             <a
-              href="#download"
+              href="https://docs.errandgo.io"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm font-medium text-slate-600 transition hover:text-slate-950"
             >
-              Get started
+              Docs
             </a>
           </nav>
 
@@ -458,7 +467,7 @@ export default function Landing() {
         <div className="relative mx-auto grid max-w-7xl gap-14 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
           <FadeUp>
             <div className="max-w-3xl">
-              <Eyebrow>Built for trusted everyday transactions</Eyebrow>
+              <Shieldbrow>Built for secure, real-world transactions</Shieldbrow>
 
               <h1 className="mt-6 text-4xl font-semibold leading-tight tracking-tight text-slate-950 md:text-6xl md:leading-[1.03]">
                 {brand.headline}
