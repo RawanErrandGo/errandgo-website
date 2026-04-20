@@ -434,7 +434,9 @@ export default function Landing() {
 
           <div className="hidden items-center gap-2 md:flex">
             <a
-              href="/app"
+              href="https://app.errandgo.io"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
             >
               <Monitor className="h-4 w-4" />
@@ -479,7 +481,9 @@ export default function Landing() {
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
-                  href="/app"
+                  href="https://app.errandgo.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
                 >
                   <Monitor className="h-4 w-4" />
